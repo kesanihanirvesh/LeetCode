@@ -12,7 +12,7 @@ class Solution {
         if(n==1){
             return 1;
         }
-        arr[n]=helper(n-1,arr)+helper(n-2,arr);
-        return arr[n];
+        
+        return helper(n-1,arr)+helper(n-2,arr);
     }
 }
